@@ -68,7 +68,7 @@ public class Emby extends Spider {
     }
 
     public String playerContent(String flag, String id, List<String> vipFlags) throws Exception {
-        String reqUrl = playUrl + "&id=" + id;
+        String reqUrl = playUrl + "?id=" + id;
         return OkHttp.string(reqUrl);
     }
 
